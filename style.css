@@ -92,9 +92,10 @@ body h3{
 }
 
 h6 {
-    font-size: 1em;
+    font-size: large;
     font-weight: 900;
     padding-top: 1em;
+    padding-bottom: 1em;
     margin: 0;    
     justify-content: center;
     display: flex;
