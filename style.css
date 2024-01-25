@@ -1,8 +1,13 @@
+
 body {
     font-family: 'Raleway', sans-serif;
-    font-weight: 100;
-  }
-  
+    font-weight: 400;
+    padding: 0;
+    background-image: url(images/achtergrond.png);
+
+}
+
+
 
 /*hamburgermenu*/
 
@@ -12,16 +17,18 @@ body {
     width: 100%;
     padding: 0.5em 1em 0.5em 1em;
     align-items: center;
-    background: white;
+    background: whitesmoke;
     display: flex;
     justify-content: space-between;
+    z-index: 1;
 }
 
 .logo {
     display: flex;
     justify-content: left;
-    height: 4em;
-    width: 4em;
+    height: 5em;
+    width: 5em;
+    z-index: 2;
 }
 
 #check {
@@ -38,37 +45,37 @@ body {
 }
 
 .navbar {
-    position: absolute;
+    position: fixed;
+    overflow: hidden;
     top: 5em;
     left: 0;
+    right: 0;
     width: 100%;
     height: 0em;
     background: whitesmoke;
-    overflow: hidden;
+    z-index: 6;
 }
 
 .navbar a {
     display: flex;
     font-size: 1em;
     margin: 1.2em;
+    padding: 0;
     justify-content: center;
     text-decoration: none;
-    font-weight:700;
+    font-weight: 700;
 }
 
 /*body*/
 
-
-
 .wrapper{
-    padding: 2em;
-    padding-right: 2em;
+    padding: 2em 2em ;
 }
 
 body h2{
     font-size: 1.9em;
     font-weight: 900;
-    padding-top: 2em;
+    padding-top: 3em;
     margin: 0;    
     justify-content: center;
     display: flex;
@@ -76,21 +83,69 @@ body h2{
 }
 
 body h3{
-    padding-bottom: 1em;
-    margin: 0;
+    padding-bottom: 0.7em;
     font-size: x-large;
-    font-weight: 300;
+    font-weight: 400;
     justify-content: center;
     display: flex;
     color: purple;
 }
 
-.bruin{
-    display: inline-block;
+h6 {
+    font-size: 1em;
+    font-weight: 900;
+    padding-top: 1em;
+    margin: 0;    
+    justify-content: center;
+    display: flex;
+    color: purple;
+    text-transform: uppercase;
 }
 
-.tussenkop {
+
+.bruin{
+    display:inline-flex;
+}
+
+
+.subtext {
+    color: rgb(3,128, 113);
+    font-weight: 400;
+
+}
+.subtext2 {
+    color: rgb(124, 62, 4);
+    font-weight: 400;
+}
+
+.tussenkop3 {
+    color: rgb(3,128, 113);
     font-size: large;
+    font-weight: 900;
+    justify-content: center;
+    padding-top: 1em;
+    text-transform: uppercase;
+}
+
+h3.tussenkop {
+    font-size: large;
+    font-weight: 900;
+    color: rgb(124, 62, 4);
+    justify-content: center;
+    padding-top: 1em;
+}
+
+h4.tussenkop2 {
+    display: flex;
+    font-size: large;
+    font-weight: 900;
+    color: rgb(124, 62, 4);
+    justify-content: center;
+    padding-top: 1em;
+}
+
+.openingstijden {
+    justify-content: center;
 }
 
 .header2 {
@@ -98,15 +153,20 @@ body h3{
     font-weight: 900;
     padding-top: 2em;
     margin: 0;    
-    justify-content: left;
-    display: flex;
+    float: right;
+    justify-content: right;
     color: rgb(124, 62, 4);
+
 }
 
 .icon2 {
     display: flex;
-    float: right;
-    width: 100px;
+    float: left;
+    width: 80px;
+    height: 80px;
+    padding-top: 4em;
+    padding-right: 1em;
+    padding-left: 1em;
 }
 
 .header3 {
@@ -121,18 +181,15 @@ body h3{
 }
 
 .groen{
-    display: inline-block;
-}
-.icon {
-    display: flex;
-    float: right;
-    width: 100px;
+    display: flex
 }
 
-.vakje{
-    background-color: whitesmoke;
-    padding: 2em;
-    border-radius: 30px;
+.icon {   
+    float: right;
+    width: 100px;
+    height: 100px;
+    padding-top: 4em;
+    padding-left: 5em;
 }
 
 .knop1, h4 a {
@@ -162,12 +219,12 @@ body h3{
 .knop1 {
     border: 0.5px solid black;
     outline-style: solid;
-    filter: drop-shadow(lightgrey 0.3em 0.3em 6px);
+    filter: drop-shadow( 0.3em 0.3em 6px grey);
 
 }
 
 .knop2 {
-    filter: drop-shadow(lightgrey 0.3em 0.3em 6px);
+    filter: drop-shadow( 0.3em 0.3em 6px grey);
 }
 
 .map{
@@ -175,8 +232,9 @@ body h3{
 }
 
 footer{
-    background-color: whitesmoke;
-    padding:0.2em;
+    background-color: rgb(173, 173, 173);
+    padding: 0.2em;
+    width: 100%;
 }
 
 img {
@@ -186,6 +244,11 @@ img {
     margin: 0;
     padding: 0;
 
+}
+
+h3 p {
+    justify-content: center;
+    display: flex;
 }
 
 /* paniek*/
@@ -204,3 +267,12 @@ div.scroll-container {
     border-radius: 10px;
   }
 
+map {
+    width:20em;
+}
+
+.wiel {
+    padding-left: 13.5em;
+    display: flex;
+    justify-content: right;
+}
